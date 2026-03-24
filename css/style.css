@@ -1,0 +1,186 @@
+:root {
+  --main-bg-color: brown;
+  font-size: clamp(0.9375rem, 0.9119rem + 0.1136vw, 1rem);
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  /* remove o sublinhado dos links */
+  color: black;
+  /* altera a cor de todos os links das páginas */
+}
+
+/*header*/
+
+header {
+  background-color: #848484;
+  color: white;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+header h1 {
+  font-size: 35px;
+}
+
+header p {
+  font-size: 9px;
+
+}
+
+header nav ul {
+  display: flex;
+  gap: 10vw;
+
+}
+
+header nav ul li a {
+  font-size: 16px;
+  color: white;
+}
+
+/*banner*/
+
+section.banner h1 {
+  font-size: 10vw;
+  color: black;
+
+}
+
+section.banner div {
+  background-image: url(/imagens/flower\ 1.png);
+}
+
+section.banner p {
+  margin: 10vw 15vw;
+  color: white;
+}
+
+/*carts*/
+
+.grade-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.card-foto {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.card-foto img {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.texto-sobreposto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "Times New Roman", serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+}
+
+/*registros*/
+
+section.registros .um h4 {
+  font-size: 20px;
+  margin: 5vw 0 10vw;
+  padding: 8vw 35vw 0;
+  color: white;
+}
+
+section.registros .um p {
+  font-size: 12px;
+  padding: 2vw 14vw;
+  color: white;
+}
+
+section.registros .um button {
+  background-color: #bfb39f;
+  color: white;
+  border-radius: 10px;
+  font-size: 15px;
+  padding: 2px 20px;
+  margin: 6vw 35vw;
+}
+
+section.registros {
+  background-image: url(/imagens/JARDIM.png);
+}
+
+/*carta*/
+section.carta {
+  margin: 5vw 0 10vw;
+  padding: 16vw 10vw;
+  background-image: url(/imagens/AVIAO.png);
+}
+
+section.carta h5 {
+  font-size: 20px;
+  color: white;
+}
+
+section.carta p {
+  font-size: 12px;
+  color: white;
+}
+
+/*footer*/
+footer {
+  background-color: #e3dbd1;
+  color: black;
+  gap: 20px;
+  align-items: center;
+}
+
+footer p {
+  font-size: 1rem;
+  justify-content: center;
+  display: flex;
+  padding: 20px 20px;
+}
+
+footer h5 {
+  font-size: 2.5rem;
+  justify-content: center;
+  display: flex;
+  padding: 1vw 7vw;
+}
+
+/*celular*/
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  header nav ul {
+    display: block;
+    padding: 2vw 10vw;
+  }
+
+  .grade-container {
+    grid-template-columns: 7fr;
+    padding: 5vw 15vw;
+  }
+}
